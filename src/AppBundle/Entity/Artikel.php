@@ -15,16 +15,9 @@ class Artikel
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="artikelnr", type="integer", unique=true)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="artikelnr", type="integer", unique=true)
      */
     private $artikelnr;
 
@@ -91,17 +84,6 @@ class Artikel
      */
     private $artikelActief;
 
-
-    /**
-     * Get id
-     *
-     * @return integer
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
     /**
      * Set artikelnr
      *
@@ -112,7 +94,7 @@ class Artikel
     public function setArtikelnr($artikelnr)
     {
         $this->artikelnr = $artikelnr;
-    
+
         return $this;
     }
 
@@ -136,7 +118,7 @@ class Artikel
     public function setOmschrijving($omschrijving)
     {
         $this->omschrijving = $omschrijving;
-    
+
         return $this;
     }
 
@@ -160,7 +142,7 @@ class Artikel
     public function setTechSpec($techSpec)
     {
         $this->techSpec = $techSpec;
-    
+
         return $this;
     }
 
@@ -184,7 +166,7 @@ class Artikel
     public function setMagazijnLocatie($magazijnLocatie)
     {
         $this->magazijnLocatie = $magazijnLocatie;
-    
+
         return $this;
     }
 
@@ -208,7 +190,7 @@ class Artikel
     public function setInkoop($inkoop)
     {
         $this->inkoop = $inkoop;
-    
+
         return $this;
     }
 
@@ -232,7 +214,7 @@ class Artikel
     public function setCodeVervangend($codeVervangend)
     {
         $this->codeVervangend = $codeVervangend;
-    
+
         return $this;
     }
 
@@ -256,7 +238,7 @@ class Artikel
     public function setMinVoorraad($minVoorraad)
     {
         $this->minVoorraad = $minVoorraad;
-    
+
         return $this;
     }
 
@@ -280,7 +262,7 @@ class Artikel
     public function setVoorraad($voorraad)
     {
         $this->voorraad = $voorraad;
-    
+
         return $this;
     }
 
@@ -304,7 +286,7 @@ class Artikel
     public function setBestelserie($bestelserie)
     {
         $this->bestelserie = $bestelserie;
-    
+
         return $this;
     }
 
@@ -328,7 +310,7 @@ class Artikel
     public function setArtikelActief($artikelActief)
     {
         $this->artikelActief = $artikelActief;
-    
+
         return $this;
     }
 
@@ -342,4 +324,3 @@ class Artikel
         return $this->artikelActief;
     }
 }
-
