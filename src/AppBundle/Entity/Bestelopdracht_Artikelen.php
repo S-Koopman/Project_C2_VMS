@@ -24,9 +24,9 @@ class Bestelopdracht_Artikelen
     /**
      * @var int
      *
-     * @ORM\Column(name="BestelOpdrachtNr", type="integer")
+     * @ORM\Column(name="bestelOrderNr", type="integer")
      */
-    private $bestelOpdrachtNr;
+    private $bestelOrderNr;
 
     /**
      * @var int
@@ -70,9 +70,9 @@ class Bestelopdracht_Artikelen
      *
      * @return Bestelopdracht_Artikelen
      */
-    public function setBestelOpdrachtNr($bestelOpdrachtNr)
+    public function setBestelOrderNr($bestelOrderNr)
     {
-        $this->bestelOpdrachtNr = $bestelOpdrachtNr;
+        $this->$bestelOrderNr = $bestelOrderNr;
 
         return $this;
     }
@@ -82,9 +82,9 @@ class Bestelopdracht_Artikelen
      *
      * @return integer
      */
-    public function getBestelOpdrachtNr()
+    public function getBestelOrderNr()
     {
-        return $this->bestelOpdrachtNr;
+        return $this->$bestelOrderNr;
     }
 
     /**
