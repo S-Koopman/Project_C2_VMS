@@ -22,13 +22,6 @@ class Reservering
     private $id;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="ID", type="integer", unique=true)
-     */
-    private $iD;
-
-    /**
      * @var \DateTime
      *
      * @ORM\Column(name="Datum", type="date")
@@ -70,7 +63,7 @@ class Reservering
     public function setID($iD)
     {
         $this->iD = $iD;
-    
+
         return $this;
     }
 
@@ -84,7 +77,7 @@ class Reservering
     public function setDatum($datum)
     {
         $this->datum = $datum;
-    
+
         return $this;
     }
 
@@ -108,7 +101,7 @@ class Reservering
     public function setVervalDatum($vervalDatum)
     {
         $this->vervalDatum = $vervalDatum;
-    
+
         return $this;
     }
 
@@ -132,7 +125,7 @@ class Reservering
     public function setNaam($naam)
     {
         $this->naam = $naam;
-    
+
         return $this;
     }
 
@@ -146,4 +139,3 @@ class Reservering
         return $this->naam;
     }
 }
-
